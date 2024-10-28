@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Cadastro do Primeiro Acesso</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" class="card"> <!-- Alterei o action para "cadastro.php" -->
+        <div class="campo">
+            <div class="titulo">
+                <h1>Cadastro</h1>
+                <p>Preencha todos os campos</p>
+            </div>
+            <div class="nome">
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+            </div>
+            <div class="data_nascimento">
+                <input type="date" name="data_nascimento" placeholder="Insira sua data de nascimento" required>
+            </div>
+            <div class="email">
+                <input type="email" name="email" id="email" placeholder="Seu email" required>
+            </div>
+            <div class="senha">
+                <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
+            </div>
+            <div class="senha">
+                <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme sua senha" required>
+            </div>
+            <div class="button">
+                <button type="submit"> Finalizar </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
